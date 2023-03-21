@@ -1,0 +1,667 @@
+1)
+programa
+{
+	
+	funcao inicio()
+{
+	inteiro valores[6]
+	para(inteiro i = 0; i < 6; i++){
+	inteiro valor
+	escreva("digite um numero: ")
+	leia(valor)
+	valores[i] = valor
+}
+
+		para (inteiro i = 0; i < 6; i++){
+			escreva(" - ", valores[i])
+		}
+		
+	}
+}
+
+2)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro matriz[4][4]+
+		inteiro soma
+
+			para(inteiro linha = 0; linha < 4; linha++){
+				para(inteiro coluna = 0; coluna < 4; coluna++){
+					leia(matriz[linha][coluna])		
+			}
+		}
+
+		para(inteiro linha = 0; linha < 4; linha++){
+			para(inteiro coluna =0; coluna < 4; coluna++){
+				se(matriz[linha][coluna] > 15)
+					escreva(" ", matriz[linha][coluna])
+			}
+		}
+		
+	}
+}
+3)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vetor [2]
+		cadeia numeros = ""
+
+			para(inteiro i = 0; i < 2; i++){
+				escreva("Digite um numero: ")
+					leia(vetor[i])	
+				
+			}
+			para(inteiro i = 0; i < 2; i++){
+				se(vetor[i] % 2 == 0){
+					numeros = numeros + vetor[i] + " "
+					}
+		
+		}
+		escreva("Numero par: " + numeros)  
+	}
+}
+4)
+programa
+{
+	inclua biblioteca Tipos --> tp
+	
+	
+	funcao inicio()
+	{
+		inteiro matriz[5][5]
+		inteiro maiorNumero = -888888888
+		cadeia posicao = ""
+
+				para(inteiro i=0; i < 5; i++){
+					para(inteiro j = 0; j < 5; j++){
+						escreva("Digite um numero: ")
+							leia(matriz[i][j])						
+			}
+		}
+				para(inteiro i=0; i < 5; i++){
+					para(inteiro j = 0; j < 5; j++){
+						se(matriz[i][j] > maiorNumero){
+							maiorNumero = matriz[i][j]
+							posicao = tp.inteiro_para_cadeia(i, 10) + "-" + tp.inteiro_para_cadeia(j,10)
+
+						}
+					}
+				}
+
+	}
+}
+
+
+5)
+programa
+{
+	funcao inicio()
+	{
+		inteiro vetor_numeros[10], menor_numero = 2147483647, maior_numero = 0
+
+		para(inteiro i=0; i < 10; i++)
+		{
+			escreva("Digite um número inteiro: ")
+			leia(vetor_numeros[i])
+
+			se(vetor_numeros[i] > maior_numero)
+			{
+				maior_numero = vetor_numeros[i]
+			}
+			se(vetor_numeros[i] < menor_numero)
+			{
+				menor_numero = vetor_numeros[i]
+			}
+		}
+		escreva("O maior número é: " + maior_numero)
+		escreva("\nO menor número é: " + menor_numero)
+	}
+}
+6)
+programa
+{
+	funcao inicio()
+	{
+		inteiro matriz[4][4]
+		inteiro localizar1, localizar2, localizar3, localizar4, localizar5, localizar6, localizar7, localizar8		
+		inteiro localizar9, localizar10, localizar11, localizar12, localizar13, localizar14, localizar15, localizar16
+		inteiro localizar
+
+			para(inteiro i=0; i < 4; i++){
+				para(inteiro j=0; j < 4; j++){
+					escreva("Digite os numeros: ")
+						leia(matriz[i][j])
+							
+					}
+			
+				}
+						localizar1 = matriz[0][0]
+						localizar2 = matriz[0][1]
+						localizar3 = matriz[0][2]
+						localizar4 = matriz[0][3]
+						localizar5 = matriz[1][0]
+						localizar6 = matriz[1][1]
+						localizar7 = matriz[1][2]
+						localizar8 = matriz[1][3]
+						localizar9 = matriz[2][0]
+						localizar10 = matriz[2][1]
+						localizar11 = matriz[2][2]
+						localizar12 = matriz[2][3]
+						localizar13 = matriz[3][0]
+						localizar14 = matriz[3][1]
+						localizar15 = matriz[3][2]
+						localizar16 = matriz[3][3]
+
+					escreva("localizar: ")
+					leia(localizar)
+				se(localizar == localizar1){
+					escreva("Localização linha 0 coluna 0")}
+				senao se(localizar == localizar2){
+					escreva("Localização linha 0 coluna 1")}
+				senao se(localizar == localizar3){
+					escreva("Localização linha 0 coluna 2")}
+				senao se(localizar == localizar4){
+					escreva("Localização linha 0 coluna 3")}
+				senao se(localizar == localizar5){
+					escreva("Localização linha 1 coluna 0")}
+				senao se(localizar == localizar6){
+					escreva("Localização linha 1 coluna 1")}
+				senao se(localizar == localizar7){
+					escreva("Localização linha 1 coluna 2")}
+				senao se(localizar == localizar8){
+					escreva("Localização linha 1 coluna 3")}
+				senao se(localizar == localizar9){
+					escreva("Localização linha 2 coluna 0")}
+				senao se(localizar == localizar10){
+					escreva("Localização linha 2 coluna 1")}
+				senao se(localizar == localizar11){
+					escreva("Localização linha 2 coluna 2")}
+				senao se(localizar == localizar12){
+					escreva("Localização linha 2 coluna 3")}
+				senao se(localizar == localizar13){
+					escreva("Localização linha 3 coluna 0")}
+				senao se(localizar == localizar14){
+					escreva("Localização linha 3 coluna 1")}
+				senao se(localizar == localizar15){
+					escreva("Localização linha 3 coluna 2")}
+				senao se(localizar == localizar16){
+					escreva("Localização linha 3 coluna 3")}
+					senao{escreva("Não encontrado")}
+
+
+7)
+programa
+{
+	funcao inicio()
+	{
+		inteiro vetor_numeros[6]
+
+		 para(inteiro i=0; i < 6; i++)
+		 {
+		 	escreva("\nDigite o número: ")
+		 	leia(vetor_numeros[i])
+		 }
+
+		 para(inteiro j=5; j >= 0; j--)
+		 {
+		 	escreva(vetor_numeros[j] + " ")
+		 }
+	}
+}
+
+9)
+programa
+{
+	funcao inicio()
+	{
+		real vetor_notas[10], media = 0.0
+
+		para(inteiro i=0; i < 10; i++)
+		{
+			escreva("Digite a nota do aluno: ")
+			leia(vetor_notas[i])
+
+			media = media + vetor_notas[i]
+		}
+
+		escreva("A média da turma foi: " + media/10)
+	}
+}
+8)
+programa
+{
+
+ 
+  funcao inicio()
+  {
+
+  	inteiro i, j, soma = 0, mat[3][3]
+
+    	para(i = 0; i < 3; i++)
+    	{
+     	para(j = 0; j < 3; j++)
+     	{
+        		leia(mat[i][j])
+      	}
+    	}
+
+    
+    para(i = 0; i < 3; i++)
+    {
+      para(j = 0; j < 3; j++)
+      {
+        se(i > j)
+        	soma = soma + mat[j][i]
+      }
+    }
+    escreva("\nA soma dos elementos acima da diagonal principal: " + soma)
+  }
+}
+
+
+
+ 10)
+programa
+{
+	inclua biblioteca Util
+	
+	funcao inicio()
+	{
+		inteiro numeros[5*5]
+		inteiro cartela[5][5]
+
+		para(inteiro i=0; i < 25; i=i){
+			inteiro temp = Util.sorteia(0,99)
+			logico temIgual = falso
+			para(inteiro j=0; i < i; j++){
+				se(numeros[j] == temp){
+					temIgual = verdadeiro
+
+				}
+
+			}
+
+			se(temIgual ==falso){
+				numeros[i] = temp
+				i++
+			}	
+		}
+			inteiro contador = 0
+				para(inteiro linha = 0; linha < 5; linha++){
+					para(inteiro coluna = 0; coluna < 5; coluna++){
+						cartela[linha][coluna] = numeros[contador]
+						contador++
+
+				}
+
+			}	
+	
+	
+	}
+}
+
+
+11)
+programa
+{
+	funcao inicio()
+	{
+		inteiro vetor_numeros[10], numeros_quadrados
+
+		para(inteiro i=0; i < 10; i++)
+		{
+			escreva("Digite 10 valores para o vetor: ")
+			leia(vetor_numeros[i])
+		}
+		para(inteiro k=0; k < 10; k++)
+		{
+			numeros_quadrados = vetor_numeros[k] * vetor_numeros[k]
+			escreva("\nO quadrado do valor da posição " + (k+1) + " do vetor é: " + numeros_quadrados)
+		}
+	}
+}
+
+
+12)
+import java.util.Scanner;
+
+public class Atividade01 {
+
+	public static void main(String[] args) 
+	{
+		Double[][] matriz_notas = new Double[3][10];
+		double pior_nota1 = 10.0, pior_nota2 = 10.0, pior_nota3 = 10.0;
+		int cont_pior_nota1 = 0, cont_pior_nota2 = 0, cont_pior_nota3 = 0;
+		Scanner leitor = new Scanner(System.in);
+
+		for (int i = 0; i < 3; i++) 
+		{
+			for (int j = 0; j < 10; j++) 
+			{
+				System.out.println("Digite as notas da prova " + (i + 1) + " do aluno " + (j + 1) + ": ");
+
+				matriz_notas[i][j] = leitor.nextDouble();
+
+				if (matriz_notas[0][j] <= pior_nota1) 
+				{
+					if (pior_nota1 != matriz_notas[0][j] && i == 0) 
+					{
+						cont_pior_nota1 = 0;
+					}
+					
+					pior_nota1 = matriz_notas[0][j];
+					if(i == 0) 
+					{
+						cont_pior_nota1++;
+					}
+					
+				}
+
+				if (matriz_notas[1][j] != null) 
+				{
+					if (matriz_notas[1][j] <= pior_nota2) 
+					{
+						if (pior_nota2 != matriz_notas[1][j] && i == 1) 
+						{
+							cont_pior_nota2 = 0;
+						}
+						
+						pior_nota2 = matriz_notas[1][j];
+						if (i == 1) 
+						{
+							cont_pior_nota2++;
+						}
+					}
+				}
+
+				if (matriz_notas[2][j] != null) 
+				{
+					if (matriz_notas[2][j] <= pior_nota3) 
+					{
+						if (pior_nota3 != matriz_notas[2][j] && i == 2) 
+						{
+							cont_pior_nota3 = 0;
+						}
+						pior_nota3 = matriz_notas[2][j];
+						if (i == 2) 
+						{
+							cont_pior_nota3++;
+						}
+					}
+				}
+
+			}
+		}
+		System.out.println("A pior nota da prova 1 é: " + pior_nota1 + " e " + cont_pior_nota1 + " alunos tiveram ela");
+		System.out.println("A pior nota da prova 2 é: " + pior_nota2 + " e " + cont_pior_nota2 + " alunos tiveram ela");
+		System.out.println("A pior nota da prova 3 é: " + pior_nota3 + " e " + cont_pior_nota3 + " alunos tiveram ela");
+		leitor.close();
+	}
+
+}
+
+13)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro soma = 0, vet[6] = {1, 0, 5, -2, -5, 7}
+	
+		soma = vet[0] + vet[1] + vet[4]
+		escreva("A soma das posições 0, 1 e 5 é: " + soma)
+
+		vet[3] = 100
+
+		para(inteiro i=0; i < 6; i++)
+		{
+			escreva("\nO valor do vetor na posição " + (i+1) + " é: " + vet[i])
+		}
+		
+	}
+}
+
+
+14)
+
+programa
+{
+funcao inicio()
+{
+		
+inteiro matriz1[3][3], matriz2[3][3], soma_matriz = 0, sub_matriz = 0, opcao
+cadeia matriz1_extenso
+
+            para(inteiro i=0; i < 3; i++)
+            {
+			para(inteiro j=0; j < 3; j++)
+			{
+				escreva("\nDigite um número para a primeira matriz: ")
+				leia(matriz1[i][j])
+			}
+		  }
+
+		  para(inteiro k=0; k< 3; k++)
+            {
+			para(inteiro m=0; m < 3; m++)
+			{
+				escreva("\nDigite um número para a segunda matriz: ")
+				leia(matriz2[k][m])
+			}
+		  }
+		  
+            escreva("\nAgora selecione umas da opções: ")
+            leia(opcao)
+
+            	para(inteiro n=0; n < 3; n++)
+            	{
+				para(inteiro o=0; o < 3; o++)
+				{
+					soma_matriz = soma_matriz + matriz1[n][o] + matriz2[n][o]
+					sub_matriz = sub_matriz + matriz1[n][o] - matriz2[n][o]
+					se (opcao == 3)
+					{
+						escreva("\nMatriz 1 na posição " + (n+1) + ", " + (o+1) + " é " + matriz1[n][o])
+						escreva("\nMatriz 2 na posição " + (n+1) + ", " + (o+1) + " é " + matriz2[n][o])
+					}
+				}
+			}
+		  escolha(opcao)
+		  {
+			caso 1: escreva("\nA soma das matrizes é " + soma_matriz)
+			pare
+			caso 2: escreva("\nA subtração das matrizes é " + sub_matriz)
+			pare
+		  }
+	}
+}
+
+14)
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vet[10], vet1[10], vet2[10], contador_par = 0, contador_impar = 0
+
+		para(inteiro i=0; i < 10; i++)
+		{
+			escreva("Digite um número: ")
+			leia(vet[i])
+		}
+
+		para(inteiro i=0; i < 10; i++)
+		{
+			se (vet[i] % 2 == 0)
+			{
+				vet1[i] = vet[i]
+				contador_par = contador_par++
+			}
+			senao
+			{
+				vet2[i] = vet[i]
+				contador_impar = contador_impar++
+			}
+		}
+		escreva("\nNo vetor de pares tem " + contador_par + " pares")
+		escreva("\nNo vetor de ímpares tem " + contador_impar + " ímpares")
+	}
+}
+
+
+
+
+
+
+16)
+programa
+{
+	funcao inicio()
+	{
+		inteiro vetor_numeros[6], soma_pares = 0, soma_impares = 0
+		cadeia pares_digitados = "", impares_digitados = ""
+
+		para(inteiro i=0; i < 6; i++)
+		{
+			escreva("\nDigite um número: ")
+			leia(vetor_numeros[i])
+
+			se (vetor_numeros[i] % 2 == 0)
+			{
+				pares_digitados = pares_digitados + "|" + vetor_numeros[i] 
+				soma_pares = soma_pares + vetor_numeros[i]
+			}
+			senao se (vetor_numeros[i] % 2 != 0)
+			{
+				impares_digitados = impares_digitados + "|" + vetor_numeros[i]
+				soma_impares = soma_impares + vetor_numeros[i]
+			}
+			
+		}
+		escreva("Os números pares digitados foram: " + pares_digitados + " e a soma deles é: " + soma_pares)
+		escreva("\nOs números ímpares digitados foram: " + impares_digitados + " e a soma deles é: " + soma_impares)
+	}
+}
+
+17)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vetor [10] 
+	 	
+	 	para(inteiro i=0; i < 10; i++){
+		escreva(" digite um numero ")  	
+	 	leia(vetor[i])
+	 	
+	}
+		real temp
+		para(inteiro i=0; i < 10; i++){
+		para(inteiro j=1; j <= i; j++){
+		se(vetor[j-1] > vetor[j]){
+			temp=vetor[j-1]
+			vetor[j-1] = vetor [j]
+			vetor[j] = temp
+		}
+		}
+		}
+	escreva(" vetor ordenado ")
+	para(inteiro i=0; i < 10; i++){
+	escreva(vetor[i], " ")
+		
+	}
+	}
+}
+
+18)
+programa
+ {
+  
+  funcao inicio(){
+    
+    inteiro l, c, matriz[3][3] 
+
+    para(l = 0; l < 3; l++){
+      para(c = 0; c < 3; c++)
+        leia(matriz[l][c]
+        )
+      escreva("\n")
+    }
+
+    escreva("\nMatriz transposta:\n")
+    para(c = 0; c < 3; c++){
+      para(l = 0; l < 3; l++)
+        escreva(matriz[l][c], " ")
+      escreva("\n")
+    }
+  }
+}
+
+19)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vetor1[10], vetor2[10], vetor_soma[10]
+
+		para(inteiro i=0; i < 10; i++)
+		{
+			escreva("Digite 10 valores para o vetor 1: ")
+			leia(vetor1[i])
+		}
+		para(inteiro j=0; j < 10; j++)
+		{
+			escreva("Digite 10 valores para o vetor 2: ")
+			leia(vetor2[j])
+		}
+		para(inteiro k=0; k < 10; k++)
+		{
+			vetor_soma[k] = vetor1[k] + vetor2[k]
+			escreva("\nA soma dos valores dos dois vetores na posição " + (k+1) + " é: " + vetor_soma[k])
+		}
+		
+	}
+}
+
+
+
+
+
+
+20)
+programa
+{
+	
+	funcao inicio()
+	{
+	inteiro matriz [3][3], contador = 0
+	
+		
+ 		para(inteiro i=0; i < 3; i++)
+ 		{
+            para(inteiro j=0; j < 3; j++)
+            {
+             escreva("Digite um número: ")
+             leia(matriz [i][j])
+		  }                  		
+    
+		}
+ 		para(inteiro k=0; k < 3; k++)
+ 		{
+			escreva("\nOs números da diagonal principal são: " + matriz[k][contador])
+			contador++
+		}
+ 		
+
+	}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class atividade3 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		boolean continuar = true;
+
+		while (continuar) {
+			System.out.print("Digite o nome do aluno: ");
+			String nome = in.nextLine();
+
+			double soma = 0;
+
+			for (int i = 1; i <= 4; i++) {
+				System.out.print("Digite a nota " + i + ": ");
+				double nota = in.nextDouble();
+				soma += nota;
+			}
+
+			in.nextLine();
+
+			double media = soma / 4;
+
+			System.out.println("Aluno: " + nome);
+			System.out.println("Media: " + media);
+
+			if (media >= 6) {
+				System.out.println("Aluno provado!");
+			} else {
+				System.out.println("Aluno reprovado!");
+			}
+
+			System.out.print("Deseja continuar (Sim/Nao)? ");
+			String resposta = in.nextLine();
+			if (!resposta.equalsIgnoreCase("Sim")) {
+				continuar = false;
+				in.close();
+			}
+		}
+
+	}
+}

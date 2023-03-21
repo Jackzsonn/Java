@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class atividade5 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+
+		String[][] Estudantes = new String[3][5];
+
+		for (int i = 0; i < 3; i++) {
+			System.out.print("Nome do estudante " + (i + 1) + " ");
+			Estudantes[i][0] = in.nextLine();
+
+			double soma = 0;
+			for (int j = 1; j < 5; j++) {
+				System.out.print("Nota " + j + ": ");
+				Estudantes[i][j] = in.nextLine();
+				soma += Double.parseDouble(Estudantes[i][j]);
+			}
+
+			double media = soma / 4.0;
+			Estudantes[i][4] = Double.toString(media);
+		}
+
+		System.out.println("estudante\t\t media nota");
+		double media_mais_alta = 0;
+		double media_mais_baixa = 100;
+		String estudante_com_nota_mais_alta = "";
+		String estudante_com_nota_mais_baixa = "";
+		for (int i = 0; i < 3; i++) {
+			System.out.println(Estudantes[i][0] + "\t\t" + Estudantes[i][4]);
+			double media = Double.parseDouble(Estudantes[i][4]);
+			if (media > media_mais_alta) {
+				media_mais_alta = media;
+				estudante_com_nota_mais_alta = Estudantes[i][0];
+			}
+			if (media < media_mais_baixa) {
+				media_mais_baixa = media;
+				estudante_com_nota_mais_baixa = Estudantes[i][0];
+			}
+		}
+
+		System.out.println(
+				"Estudante com a media mais alta " + estudante_com_nota_mais_alta + " (" + media_mais_alta + ")");
+		System.out.println(
+				"estudante com a media mais baixa " + estudante_com_nota_mais_baixa + " (" + media_mais_baixa + ")");
+		in.close();
+	}
+}
